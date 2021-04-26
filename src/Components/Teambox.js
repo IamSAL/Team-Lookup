@@ -1,5 +1,4 @@
 import React from 'react'
-import teamlogo from '../images/image 22.png';
 import './teamb.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
@@ -10,7 +9,7 @@ const Teambox = ({ teaminfo }) => {
     const { strAlternate, strTeam, strSport, idTeam, strTeamBadge } = teaminfo;
     return (
         <div className="teambox">
-            <img src={strTeamBadge} />
+            <img src={strTeamBadge} alt="" />
             <h2>{strAlternate?.split(',').slice(-1)[0] || strTeam}</h2>
             <p>Spors type: {strSport}</p>
             <button onClick={(e) => history.push(`./team/${idTeam}`)}>

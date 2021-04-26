@@ -11,7 +11,7 @@ const Header = ({ type, data }) => {
                 alt=""
             />
             <div className="content">
-                {type === "logo" ? <img src={data.logo} alt="" srcset="" /> : <h2>{data.title}</h2>}
+                {type === "logo" ? <img src={data.logo} alt="" /> : <h2>{data.title}</h2>}
             </div>
         </div>
 

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import Header from './Header'
-import teamlogo from '../images/image 22.png';
 import teampicMale from '../images/male.png';
 import teampicFemale from '../images/female.png';
 import './TeamDetails.scss'
@@ -19,7 +18,7 @@ const TeamDetails = () => {
         return () => {
 
         }
-    }, [])
+    }, [teamID])
 
 
     return (
@@ -30,24 +29,24 @@ const TeamDetails = () => {
                     <div className="points">
                         <h3>{details.strAlternate?.split(',').slice(-1)[0] || details.strTeam}</h3>
                         <ul>
-                            <li><FontAwesomeIcon className="icon" icon={faMapPin}></FontAwesomeIcon>
+                            <li key="1xx"><FontAwesomeIcon className="icon" icon={faMapPin}></FontAwesomeIcon>
                                 Founded:{details.intFormedYear}
                             </li>
-                            <li><FontAwesomeIcon className="icon" icon={faFlag}></FontAwesomeIcon>
+                            <li key="2dasd"><FontAwesomeIcon className="icon" icon={faFlag}></FontAwesomeIcon>
                                 Country: {details.strCountry}
                             </li>
-                            <li>
+                            <li key="dasdas1">
                                 <FontAwesomeIcon className="icon" icon={faRunning}></FontAwesomeIcon>
                                 Sport type: {details.strSport}
                             </li>
-                            <li>
+                            <li key="1dasd">
                                 <FontAwesomeIcon className="icon" icon={faMars}></FontAwesomeIcon>
                                 Gender: {details.strGender}
                             </li>
                         </ul>
                     </div>
                     <div className="image">
-                        <img src={details.strTeamFanart1 ? details.strTeamFanart1 : details.strGender == "Male" ? teampicMale : teampicFemale} alt="" srcset="" />
+                        <img alt="" src={details.strTeamFanart1 ? details.strTeamFanart1 : details.strGender === "Male" ? teampicMale : teampicFemale} />
                     </div>
                 </div>
 

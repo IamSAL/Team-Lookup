@@ -6,8 +6,7 @@ import TeamDetails from './Components/TeamDetails';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 function App() {
   const [teams, setTeams] = useState([])
@@ -87,7 +86,7 @@ function App() {
               </select>
             </div>
             <div className="teams">
-              {teams.length > 1 ? Array.from(teams).map(team => { return <Teambox teaminfo={team} key={team.idTeam}></Teambox> }) : <h2>No teams found</h2>}
+              {teams.length > 1 ? Array.from(teams).map(team => { return <Teambox teaminfo={team} key={team.idTeam}></Teambox> }) : <h2 className="errormsg">No teams found</h2>}
 
             </div>
           </Route>
