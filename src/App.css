@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@media only screen and (min-device-width : 300px) and (max-device-width : 650px) {
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  select{
+    width: 100%;
+    margin-top: 5px!important;
   }
-}
+    }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+    .teamdetails{
+        padding-bottom: 50px;
+    }
+body{
+  overflow-x: hidden;
+  background-color: #0E0A2A;
+}
+.teams{
+  padding: 50px 10%;
+  
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+
+grid-gap: 25px;
+justify-content: center;
+align-content: center;
+
+}
+.selection {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 5px;
+  flex-wrap: wrap;
+  justify-items: flex-start;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: stretch;
+  background-color: #3a42ff;
+}
+
+select {
+  margin: 10px;
+
+padding: 0px 20px;
+  height: 45px;
+  background-color: #0e0a2a;
+  margin: 0px 4px;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border: 0px;
+  border-radius: 5px;
 }

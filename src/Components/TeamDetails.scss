@@ -1,0 +1,120 @@
+
+@media only screen and (min-device-width : 300px) and (max-device-width : 650px) {
+  .summary
+     {
+      grid-template-columns: 1fr !important;
+      .image{
+          margin-top: 20px;
+      }
+  }
+    }
+
+    .control{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        button{
+            margin-top: 10px;
+            border: none;
+           background-color: #3A42FF;
+           width: 131px;
+           height: 48px;
+           left: 654px;
+           top: 1475px;
+           cursor: pointer;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        
+        text-align: center;
+        
+        color: #FFFFFF;
+        }
+    }
+
+    .teamdetails{
+        padding-bottom: 50px;
+    }
+.details{
+    padding: 50px 10%;
+    .description{
+        p{
+            font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 17px;
+line-height: 28px;
+/* or 140% */
+
+
+color: #C6C6C6;
+        }
+    }
+   
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .icon{
+        color:white;
+        font-size:30px;
+        margin: 5px;
+        cursor: pointer;
+        transition: 0.2s;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+.summary{
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #FC4D57;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+    grid-template-columns: 2fr 1.5fr;
+    .points{
+        .icon{
+            margin: 0px 10px;
+        }
+        h3{
+            margin: unset;
+        }
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size:xx-large;
+     
+        /* identical to box height */
+        
+        
+        color: #FFFFFF;
+        ul{
+            list-style: none;
+            margin: unset;
+            padding: unset;
+            li{
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 30px;
+
+color: #FFFFFF;
+            }
+        }
+    }
+    .image{
+        
+        img{
+          width: 100%;
+            
+        }
+    }
+}

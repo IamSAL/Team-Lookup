@@ -1,0 +1,33 @@
+.Header {
+    overflow: hidden;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: black;
+  }
+  
+  .bg {
+    opacity: 0.6;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+  
+  .content {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    position: relative;
+  }
+  .content img{
+      width: 30%;
+  }
+  .content h2{
+      font-size: xxx-large;
+    font-family: 'Montserrat', sans-serif;
+      color: white;
+  }
